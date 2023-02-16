@@ -1,0 +1,82 @@
+---
+title: "Homework 3"
+author: "Jillian Egland"
+date: "2023-02-16"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Import Datase 
+```{r}
+data = read.csv("https://raw.githubusercontent.com/jcegland/HW03-jcegland/main/gapminder-5060.csv")
+str(data)
+```
+
+## Group Members 
+
+```{r}
+tab <- matrix(c('Jillian Egland', "https://github.com/jcegland/HW03-jcegland", "Ben Lehman", "link"), ncol=2, byrow=TRUE)
+colnames(tab) <- c('Name','github')
+rownames(tab) <- c('1','2')
+tab <- as.table(tab)
+tab
+
+```
+
+Number of pull requests made: 0
+  #to link 
+number of pull requests accepted: 0 
+  #from link 
+
+
+## Gapminder data 
+
+Generate the graph of LifExp vs. gdpPercap for US, Canada (fixed data) and Australia by RMarkdown based on the data set “gapminder-5060”, like what we did in the class.
+Please use Github to collaborate on this problem. For example, one member can create the plot of US in his/her repository. The other member will fork this repository, add the result for the second country, and make a pull request for merging into the main repository. Each member should at least analyze one country and make at least one pull request. Please submit the RMarkdown file, the output file, and the screen shot of the successful pull request and the merge.
+
+## United States Life Expectancy vs gdpPercap 
+```{r}
+library(ggplot2)
+data_States = data[data$country=="United States", ]
+str(data_States) 
+
+ggplot(data = data_States, aes(x=lifeExp, y=gdpPercap)) + geom_point()
+
+
+
+```
+
+## Canada Life Expectancy vs gdpPercap 
+
+***** Ben to do 
+```{r}
+
+
+```
+
+
+
+
+
+
+
+
+## Tips to make github easier 
+
+1. Stay in constant communication with your partner 
+2. 
+3. 
+
+
+# Data Science Example 
+
+Write a paragraph (~200 words) describing an example of what you consider data science. Write your paragraph in R Markdown. Include at least
+
+one link to a chart or an image and
+at least one itemized or enumerated list.
+
+
+
