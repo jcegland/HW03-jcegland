@@ -51,13 +51,12 @@ ggplot(data = data_States, aes(x=lifeExp, y=gdpPercap)) + geom_point()
 
 ## Canada Life Expectancy vs gdpPercap 
 
-***** Ben to do 
 ```{r}
 
 library(tidyverse)
 library(ggplot2)
 
-life <- read_csv("~/DS202RWork/gapminder-5060.csv")
+life <- read_csv("https://raw.githubusercontent.com/jcegland/HW03-jcegland/main/gapminder-5060.csv")
 
 canada <- life[life$country == "Canada",]
 ggplot(canada, aes(x=lifeExp,y=gdpPercap)) + geom_point()
