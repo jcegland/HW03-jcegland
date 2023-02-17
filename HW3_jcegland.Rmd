@@ -18,7 +18,7 @@ str(data)
 ## Group Members 
 
 ```{r}
-tab <- matrix(c('Jillian Egland', "https://github.com/jcegland/HW03-jcegland", "Ben Lehman", "link"), ncol=2, byrow=TRUE)
+tab <- matrix(c('Jillian Egland', "https://github.com/jcegland/HW03-jcegland", "Ben Lehman", "https://github.com/BenLehmann12"), ncol=2, byrow=TRUE)
 colnames(tab) <- c('Name','github')
 rownames(tab) <- c('1','2')
 tab <- as.table(tab)
@@ -26,10 +26,10 @@ tab
 
 ```
 
-Number of pull requests made: 0  
-  #to link  
-number of pull requests accepted: 0  
-  #from link  
+Number of pull requests made: 1 
+  to https://github.com/jcegland/HW03-jcegland
+number of pull requests accepted: 1  
+  from https://github.com/BenLehmann12
 
 
 ## Gapminder data 
@@ -59,6 +59,7 @@ library(ggplot2)
 life <- read_csv("https://raw.githubusercontent.com/jcegland/HW03-jcegland/main/gapminder-5060.csv")
 
 canada <- life[life$country == "Canada",]
+canada[2, 4]=69.96
 ggplot(canada, aes(x=lifeExp,y=gdpPercap)) + geom_point()
 #canada %>% ggplot(aes(x=gdpPercap,y=lifeExp)) + geom_line()
 ```
