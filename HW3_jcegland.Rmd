@@ -54,7 +54,14 @@ ggplot(data = data_States, aes(x=lifeExp, y=gdpPercap)) + geom_point()
 ***** Ben to do 
 ```{r}
 
+library(tidyverse)
+library(ggplot2)
 
+life <- read_csv("~/DS202RWork/gapminder-5060.csv")
+
+canada <- life[life$country == "Canada",]
+ggplot(canada, aes(x=lifeExp,y=gdpPercap)) + geom_point()
+#canada %>% ggplot(aes(x=gdpPercap,y=lifeExp)) + geom_line()
 ```
 
 
@@ -67,8 +74,9 @@ ggplot(data = data_States, aes(x=lifeExp, y=gdpPercap)) + geom_point()
 ## Tips to make github easier 
 
 1. Stay in constant communication with your partner 
-2. Work in small chunks at a time 
-3. Don't forget to commit and push changes 
+2. Add Comments to Changes
+3. Work in small chunks at a time 
+4. Don't forget to commit and push changes 
 
 
 # Data Science Example 
