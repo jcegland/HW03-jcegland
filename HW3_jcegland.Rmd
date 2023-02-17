@@ -26,10 +26,10 @@ tab
 
 ```
 
-Number of pull requests made: 0
-  #to link 
-number of pull requests accepted: 0 
-  #from link 
+Number of pull requests made: 0  
+  #to link  
+number of pull requests accepted: 0  
+  #from link  
 
 
 ## Gapminder data 
@@ -75,15 +75,23 @@ ggplot(canada, aes(x=lifeExp,y=gdpPercap)) + geom_point()
 
 1. Stay in constant communication with your partner 
 2. Add Comments to Changes
-3. 
+3. Work in small chunks at a time 
+4. Don't forget to commit and push changes 
 
 
 # Data Science Example 
 
-Write a paragraph (~200 words) describing an example of what you consider data science. Write your paragraph in R Markdown. Include at least
+One example of using data science is in the manufacturing sector. Manufacturers use data science to predict many things such as: 
 
-one link to a chart or an image and
-at least one itemized or enumerated list.
+* Risk minimization  
+* Supply chain optimization  
+* Analyzing needs of customers  
+* Optimally using resources  
 
+The main use of data science in manufacturing is to create forecasts for the demand of certain products. This allows them to optimize supply chains. Optimization makes sure they don't over manufacture or under manufacture any product. The forecast tells them about how much of a product they should make. Data science makes sure that parts are stocked and delivered on time. It considers many factors that influence the process, such as the cost of shipping, weather, material supply, and market scarcity. They can predict the needs and actions of customers and then delegate resources as needed. Without data science in this field, manufacturers wouldn't be able to customize their production around the demand of their customers. It saves their company money, time, and resources. This shows how important data science is to businesses and how they can use data science to make more of a profit. 
+
+![chart](https://github.com/jcegland/HW03-jcegland/blob/main/gds-supply-chain.png?raw=true)
+
+This picture shows the flow of a supply chain. This allows people to visualize the flow. 
 
 
